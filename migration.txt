@@ -1,0 +1,283 @@
+'use strict';
+
+/* eslint-disable new-cap */
+module.exports = {
+    up: function(migration, DataTypes) {
+        const tables = [
+            [
+                'EntityZero',
+                {
+                    AttrZero: {
+                        PropertyZero: value,
+                        PropertyOne: value,
+                        PropertyTwo: value
+                    },
+                    AttrOne: {
+                        PropertyZero: value,
+                        PropertyOne: value
+                    },
+                    AttrTwo: {
+                        PropertyZero: value,
+                        PropertyOne: value
+                    },
+                    AttrThree: {
+                        PropertyZero: value
+                    },
+                    AttrFour: {
+                        PropertyZero: value,
+                        PropertyOne: value
+                    }
+                }
+            ],
+            [
+                'EntityOne',
+                {
+                    AttrZero: {
+                        PropertyZero: value,
+                        PropertyOne: value,
+                        PropertyTwo: value
+                    },
+                    AttrOneEntityZeroId: {
+                        PropertyZero: value,
+                        PropertyOne: value,
+                        references: {
+                            model: 'EntityZero',
+                            key: 'id'
+                        },
+                        PropertyTwo: 'value'
+                    },
+                    AttrTwo: {
+                        PropertyZero: value
+                    }
+                }
+            ],
+            [
+                'EntityTwo',
+                {
+                    AttrZero: {
+                        PropertyZero: value,
+                        PropertyOne: value,
+                        PropertyTwo: value
+                    },
+                    AttrOneEntityOneId: {
+                        PropertyZero: value,
+                        PropertyOne: value,
+                        references: {
+                            model: 'EntityOne',
+                            key: 'id'
+                        },
+                        PropertyTwo: 'value'
+                    },
+                    AttrTwo: {
+                        PropertyZero: value
+                    }
+                }
+            ],
+            [
+                'EntityThree',
+                {
+                    AttrZero: {
+                        PropertyZero: value,
+                        PropertyOne: value,
+                        PropertyTwo: value
+                    },
+                    AttrOne: {
+                        PropertyZero: value,
+                        PropertyOne: value,
+                        PropertyTwo: value
+                    },
+                    AttrTwoEntityZeroId: {
+                        PropertyZero: value,
+                        PropertyOne: value,
+                        references: {
+                            model: 'EntityZero',
+                            key: 'id'
+                        },
+                        PropertyTwo: 'value'
+                    },
+                    AttrThree: {
+                        PropertyZero: value,
+                        PropertyOne: value,
+                        PropertyTwo: value
+                    }
+                }
+            ],
+            [
+                'EntityFour',
+                {
+                    AttrZero: {
+                        PropertyZero: value,
+                        PropertyOne: value,
+                        PropertyTwo: value
+                    },
+                    AttrOneEntityZeroId: {
+                        PropertyZero: value,
+                        PropertyOne: value,
+                        references: {
+                            model: 'EntityZero',
+                            key: 'id'
+                        },
+                        PropertyTwo: 'value'
+                    },
+                    AttrTwoEntityThreeId: {
+                        PropertyZero: value,
+                        PropertyOne: value,
+                        references: {
+                            model: 'EntityThree',
+                            key: 'id'
+                        },
+                        PropertyTwo: 'value'
+                    },
+                    AttrThree: {
+                        PropertyZero: value,
+                        PropertyOne: value,
+                        PropertyTwo: value
+                    },
+                    AttrFourEntityFourId: {
+                        PropertyZero: value,
+                        PropertyOne: value,
+                        references: {
+                            model: 'EntityFour',
+                            key: 'id'
+                        },
+                        PropertyTwo: 'value'
+                    },
+                    AttrFive: {
+                        PropertyZero: value,
+                        PropertyOne: value,
+                        PropertyTwo: value
+                    }
+                }
+            ],
+            [
+                'EntityFive',
+                {
+                    AttrZero: {
+                        PropertyZero: value,
+                        PropertyOne: value,
+                        PropertyTwo: value
+                    },
+                    AttrOneEntityZeroId: {
+                        PropertyZero: value,
+                        PropertyOne: value,
+                        references: {
+                            model: 'EntityZero',
+                            key: 'id'
+                        },
+                        PropertyTwo: 'value'
+                    },
+                    AttrTwoEntityFourId: {
+                        PropertyZero: value,
+                        PropertyOne: value,
+                        references: {
+                            model: 'EntityFour',
+                            key: 'id'
+                        },
+                        PropertyTwo: 'value'
+                    },
+                    AttrThree: {
+                        PropertyZero: value,
+                        PropertyOne: value,
+                        PropertyTwo: value
+                    }
+                }
+            ],
+            [
+                'EntitySix',
+                {
+                    AttrZero: {
+                        PropertyZero: value,
+                        PropertyOne: value,
+                        PropertyTwo: value
+                    },
+                    AttrOneEntityZeroId: {
+                        PropertyZero: value,
+                        PropertyOne: value,
+                        references: {
+                            model: 'EntityZero',
+                            key: 'id'
+                        },
+                        PropertyTwo: 'value'
+                    },
+                    AttrTwoEntityFiveId: {
+                        PropertyZero: value,
+                        PropertyOne: value,
+                        references: {
+                            model: 'EntityFive',
+                            key: 'id'
+                        }
+                    },
+                    AttrThree: {
+                        PropertyZero: value,
+                        PropertyOne: value,
+                        PropertyTwo: value
+                    }
+                }
+            ],
+            [
+                'EntitySeven',
+                {
+                    AttrZero: {
+                        PropertyZero: value,
+                        PropertyOne: value,
+                        PropertyTwo: value
+                    },
+                    AttrOneEntityZeroId: {
+                        PropertyZero: value,
+                        PropertyOne: value,
+                        references: {
+                            model: 'EntityZero',
+                            key: 'id'
+                        },
+                        PropertyTwo: 'value'
+                    },
+                    AttrTwo: {
+                        PropertyZero: value,
+                        PropertyOne: value,
+                        PropertyTwo: value
+                    }
+                }
+            ],
+            [
+                'EntityEight',
+                {
+                    AttrZero: {
+                        PropertyZero: value,
+                        PropertyOne: value,
+                        PropertyTwo: value
+                    },
+                    AttrOneEntityZeroId: {
+                        PropertyZero: value,
+                        PropertyOne: value,
+                        references: {
+                            model: 'EntityZero',
+                            key: 'id'
+                        },
+                        PropertyTwo: 'value'
+                    },
+                    AttrTwo: {
+                        PropertyZero: value,
+                        PropertyOne: value,
+                        PropertyTwo: value
+                    },
+                    AttrThreeEntityFourId: {
+                        PropertyZero: value,
+                        PropertyOne: value,
+                        references: {
+                            model: 'EntityFour',
+                            key: 'id'
+                        },
+                        PropertyTwo: 'value'
+                    },
+                    AttrFour: {
+                        PropertyZero: value,
+                        PropertyOne: value,
+                        PropertyTwo: value
+                    }
+                }
+            ]
+        ];
+
+        /* ================================================================================= */
+           ...
+};
