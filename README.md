@@ -1,5 +1,5 @@
 # RefIntegrityAutomation
-/**
+
  * <h1>Migration referential integrity solution!</h1>
  * REASON FOR THIS PROGRAM:
  *
@@ -19,7 +19,6 @@
  * @author  Paul Jett
  * @version 1.2
  * @since   7/30/17
- */
  
  NOTE: For this program I modified the migration file to help readers understand the entity data structure used in 
  this program. I also reduced the number of entities from 50+ to 8 and rewrote entity names, attributes, and properties
